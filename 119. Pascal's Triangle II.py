@@ -24,18 +24,6 @@
 # print(getRow(5))
 
 def getRow(rowIndex):
-    num = [1]
-    for i in range(1,rowIndex+1):
-        num = list(map(lambda x,y: x+y, ))
-
-
-
-    num = [1]
-    for i in range(1,rowIndex+1):
-        num = list(map(lambda x,y: x+y, [0]+num ,num+[0]))
-    return num
-print(getRow(7))
-
     row = [1]
     for _ in range(rowIndex):
         row = [x + y for x, y in zip([0] + row, row + [0])]
